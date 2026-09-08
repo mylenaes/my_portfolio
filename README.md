@@ -1,6 +1,6 @@
 # Mylena Silva — Portfólio
 
-Portfólio pessoal desenvolvido para apresentar minha trajetória acadêmica, experiências profissionais, projetos e conhecimentos na área de desenvolvimento web.
+Portfólio pessoal desenvolvido para apresentar minha trajetória acadêmica, experiências profissionais, projetos, conhecimento na área de desenvolvimento web.
 
 🔗 **Acesse o projeto online:** [my-portfolio-eight-rust-tlw6xr6ayr.vercel.app](https://my-portfolio-eight-rust-tlw6xr6ayr.vercel.app/)
 
@@ -15,7 +15,7 @@ Portfólio pessoal desenvolvido para apresentar minha trajetória acadêmica, ex
 - Apresentação de projetos e experiências profissionais
 - Formulário de contato integrado com EmailJS
 - Links para redes sociais
-- Layout 100% responsivo para dispositivos móveis
+- Layout responsivo para dispositivos móveis
 - Animações e efeitos de interação
 - Fundo animado interativo com partículas em estilo espacial
 
@@ -61,11 +61,11 @@ my_portfolio/
 
 ## 🎨 Design & Identidade Visual
 
-O design do portfólio segue uma abordagem minimalista, moderna e inspirada em elementos tecnológicos e espaciais.
+O design do portfólio segue uma abordagem minimalista, moderna e inspirada em elementos tecnológicos, espaciais e com um toque de personalidade.
 
 ### Paleta de Cores
 
-A identidade visual utiliza uma paleta baseada em tons de azul:
+A identidade visual utiliza uma paleta baseada em tons de azul, cor favorita da desenvolvedora:
 
 - **Azul ciano:** `#05A8BF` — Destaques, títulos, links e elementos de interação
 - **Azul:** `#1C58B0` — Elementos secundários, detalhes e componentes da interface
@@ -80,7 +80,7 @@ A identidade visual utiliza uma paleta baseada em tons de azul:
 
 ### Fundo Animado
 
-O fundo utiliza partículas interconectadas por meio do **tsParticles**, criando uma estética inspirada em constelações e redes de dados.
+O fundo utiliza partículas interconectadas por meio do **tsParticles**, criando uma estética inspirada em constelações e aos Grafos da disciplina de Algoritmos em Grafos, uma das melhores experiências da desenvolvedora na universidade.
 
 As partículas possuem movimentos suaves e interações visuais que complementam a identidade tecnológica do portfólio sem prejudicar a leitura do conteúdo.
 
