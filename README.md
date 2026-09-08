@@ -68,46 +68,59 @@ src/
 ├── main.jsx        # Ponto de entrada do React
 └── index.css       # Estilos globais e variáveis de tema
 
-🚀 Como Executar o Projeto
-Pré-requisitos
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
 Antes de começar, você precisará ter instalado em sua máquina:
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)
+- Gerenciador de pacotes `npm` (incluído com o Node)
 
-Node.js (versão LTS recomendada)
+### Passo a passo
 
-Gerenciador de pacotes npm (incluído com o Node)
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/mylenaes/my_portfolio.git](https://github.com/mylenaes/my_portfolio.git)
+   ```
 
-Passo a passo:
-Clone o repositório:
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd my_portfolio
+   ```
 
-Bash
-git clone [https://github.com/mylenaes/my_portfolio.git](https://github.com/mylenaes/my_portfolio.git)
-Acesse a pasta do projeto:
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-Bash
-cd my_portfolio
-Instale as dependências:
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
 
-Bash
-npm install
-Inicie o servidor de desenvolvimento:
+5. **Acesse no navegador:**
+   Abra o endereço indicado no terminal (geralmente `http://localhost:5173`).
 
-Bash
-npm run dev
-Acesse no navegador:
-Abra o endereço indicado no terminal (geralmente http://localhost:5173).
+---
 
-📦 Build para Produção
+## 📦 Build para Produção
+
 Para gerar a versão otimizada para produção:
-
-Bash
+```bash
 npm run build
+```
+
 Para testar o resultado da build localmente:
-
-Bash
+```bash
 npm run preview
-📬 Contato
-GitHub: github.com/mylenaes
+```
 
-Deploy: my-portfolio-eight-rust-tlw6xr6ayr.vercel.app
+---
 
-Desenvolvido com 💙 por Mylena Silva
+## 📬 Contato
+
+- **GitHub:** [github.com/mylenaes](https://github.com/mylenaes)
+- **Deploy:** [my-portfolio-eight-rust-tlw6xr6ayr.vercel.app](https://my-portfolio-eight-rust-tlw6xr6ayr.vercel.app/)
+
+---
+
+Desenvolvido com 💙 por **Mylena Silva**
