@@ -1,0 +1,101 @@
+.hobbies {
+  min-height: 100vh;
+  padding: 112px 64px 96px;
+  scroll-margin-top: 104px;
+}
+
+.hobbies-content {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hobbies h2 {
+  margin-bottom: 32px;
+  color: var(--text);
+  font: 600 var(--font-xl) / var(--line-xl) var(--font-display);
+}
+
+.hobbies-content > p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: var(--text-secondary);
+  font: 400 var(--font-md) / var(--line-md) var(--font-body);
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.hobbies-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.hobbies-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  opacity: 0.4;
+  cursor: pointer;
+  transition:
+    width 0.3s ease,
+    opacity 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.hobbies-dots button.active {
+  width: 24px;
+  border-radius: 4px;
+  background: var(--aurora-green);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hobbies {
+    padding: 96px 24px 80px;
+    scroll-margin-top: 88px;
+  }
+
+  .hobbies h2 {
+    font-size: var(--font-lg);
+    line-height: var(--line-lg);
+    margin-bottom: 24px;
+  }
+
+  .hobbies-content > p {
+    margin-bottom: 24px;
+    font-size: var(--font-sm);
+    line-height: var(--line-sm);
+  }
+
+  .hobbies-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 8px 50vw;
+    margin: 0 -24px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .hobbies-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hobbies-dots {
+    margin-top: 16px;
+  }
+}

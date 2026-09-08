@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { ParticlesProvider } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+import App from "./App";
+import "./index.css";
 
-createRoot(document.getElementById('root')).render(
+const initParticles = async (engine) => {
+  await loadSlim(engine);
+};
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <ParticlesProvider init={initParticles}>
+      <App />
+    </ParticlesProvider>
   </StrictMode>,
-)
+);

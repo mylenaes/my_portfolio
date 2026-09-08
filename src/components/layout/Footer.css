@@ -1,0 +1,20 @@
+.footer {
+  background: var(--dark-background);
+}
+
+.footer-bottom {
+  padding: 24px 64px 32px;
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: var(--text-secondary);
+  font: 400 var(--font-xs) / var(--line-xs) var(--font-body);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    padding: 24px;
+  }
+}

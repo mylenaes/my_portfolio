@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--background);
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+:root {
+  --aurora-green: #05A8BF;
+  --electric-blue: #1C58B0;
+  --aurora-purple: #2A1D9E;
+
+  --dark-background: #07111f;
+  --dark-surface: #0b1933;
+  --dark-text: #f4f8ff;
+  --dark-text-secondary: #a8b6cc;
+
+  --light-background: #f5faff;
+  --light-surface: #eaf4fc;
+  --light-text: #102033;
+  --light-text-secondary: #52677d;
+
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --font-xs: 12px;
+  --font-sm: 16px;
+  --font-md: 20px;
+  --font-lg: 24px;
+  --font-xl: 32px;
+  --font-xxl: 40px;
+  --font-display-lg: 64px;
+
+  --line-xs: 16px;
+  --line-sm: 24px;
+  --line-md: 28px;
+  --line-lg: 32px;
+  --line-xl: 40px;
+  --line-xxl: 48px;
+  --line-display-lg: 64px;
+}
+
+:root {
+  --background: var(--dark-background);
+  --surface: var(--dark-surface);
+  --text: var(--dark-text);
+  --text-secondary: var(--dark-text-secondary);
+}
+
+.font-xs {
+  font: 400 var(--font-xs) / var(--line-xs) var(--font-body);
+}
+
+.font-sm {
+  font: 400 var(--font-sm) / var(--line-sm) var(--font-body);
+}
+
+.font-md {
+  font: 400 var(--font-md) / var(--line-md) var(--font-body);
+}
+
+.font-lg {
+  font: 400 var(--font-lg) / var(--line-lg) var(--font-body);
+}
+
+.font-xl {
+  font: 600 var(--font-xl) / var(--line-xl) var(--font-display);
+}
+
+.font-xxl {
+  font: 600 var(--font-xxl) / var(--line-xxl) var(--font-display);
+}
+
+.font-display {
+  font: 600 var(--font-display-lg) / var(--line-display-lg) var(--font-display);
+}
+
+.font-mono {
+  font: 400 var(--font-sm) / var(--line-sm) var(--font-mono);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
