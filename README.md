@@ -25,91 +25,126 @@ Portfólio pessoal desenvolvido para apresentar minha trajetória acadêmica, ex
 
 - **React** — Construção da interface e componentes
 - **JavaScript (ES6+)** — Lógica e interatividade
-- **Vite** — Ambiente de desenvolvimento e build de alta performance
-- **CSS3** — Estilização moderna e responsividade
+- **Vite** — Ambiente de desenvolvimento e build
+- **CSS3** — Estilização, animações e responsividade
 - **Lucide React** — Biblioteca de ícones vetoriais
 - **tsParticles** — Criação do fundo animado de partículas
-- **EmailJS** — Envio de mensagens pelo formulário de contato sem backend
-
----
-
-## 🎨 Design & Identidade Visual
-
-O design do portfólio segue uma abordagem minimalista e inspirada em elementos tecnológicos e espaciais.
-
-### Paleta de Cores
-- **Ciano:** `#05A8BF` (Destaques, títulos e interações)
-- **Azul:** `#1C58B0` (Elementos secundários e detalhes)
-- **Roxo:** `#2A1D9E` (Bordas e profundidade)
-- **Fundo:** Tons escuros de azul para simular a atmosfera espacial e garantir alto contraste com o texto.
-
-### Tipografia
-- **Space Grotesk** — Títulos e elementos de destaque
-- **Inter** — Textos de leitura e conteúdos gerais
-- **JetBrains Mono** — Trechos de código e detalhes técnicos
-
-### Fundo Animado
-O fundo utiliza partículas interconectadas via **tsParticles**, simulando constelações e redes de dados com movimentos suaves que não prejudicam a leitura.
+- **EmailJS** — Envio de mensagens pelo formulário de contato sem a necessidade de um backend
 
 ---
 
 ## 📁 Estrutura do Projeto
 
 ```text
-src/
-├── assets/         # Recursos visuais (imagens e ícones)
-├── components/
-│   ├── background/ # Componentes do fundo animado
-│   ├── layout/     # Estrutura principal (Navbar, Footer)
-│   ├── sections/   # Seções da página (Sobre, Projetos, Contato, etc.)
-│   └── ui/         # Componentes reutilizáveis de interface
-├── data/           # Dados estáticos (projetos, timeline, hobbies)
-├── App.jsx         # Componente raiz da aplicação
-├── main.jsx        # Ponto de entrada do React
-└── index.css       # Estilos globais e variáveis de tema
+my_portfolio/
+├── src/
+│   ├── assets/                 # Imagens e arquivos visuais utilizados no projeto
+│   ├── components/
+│   │   ├── background/         # Componentes relacionados ao fundo animado
+│   │   ├── layout/             # Elementos estruturais, como Navbar e Footer
+│   │   ├── sections/           # Seções principais do portfólio
+│   │   └── ui/                 # Componentes reutilizáveis da interface
+│   ├── App.jsx                 # Estrutura principal da aplicação
+│   ├── index.css               # Estilos globais
+│   └── main.jsx                # Ponto de entrada da aplicação
+│
+├── .gitignore                  # Arquivos e pastas ignorados pelo Git
+├── eslint.config.js            # Configurações do ESLint
+├── index.html                  # Página HTML principal
+├── package.json                # Dependências e scripts do projeto
+├── package-lock.json           # Registro das versões das dependências
+├── README.md                   # Documentação do projeto
+└── vite.config.js              # Configurações do Vite
+```
 
-## 🚀 Como Executar o Projeto
+---
+
+## 🎨 Design & Identidade Visual
+
+O design do portfólio segue uma abordagem minimalista, moderna e inspirada em elementos tecnológicos e espaciais.
+
+### Paleta de Cores
+
+A identidade visual utiliza uma paleta baseada em tons de azul:
+
+- **Azul ciano:** `#05A8BF` — Destaques, títulos, links e elementos de interação
+- **Azul:** `#1C58B0` — Elementos secundários, detalhes e componentes da interface
+- **Azul profundo:** `#2A1D9E` — Bordas, contrastes e elementos de profundidade
+- **Fundos:** Tons escuros utilizados para criar a atmosfera espacial e garantir contraste com os conteúdos
+
+### Tipografia
+
+- **Space Grotesk** — Títulos e elementos de destaque
+- **Inter** — Textos de leitura e conteúdos gerais
+- **JetBrains Mono** — Trechos de código e detalhes técnicos
+
+### Fundo Animado
+
+O fundo utiliza partículas interconectadas por meio do **tsParticles**, criando uma estética inspirada em constelações e redes de dados.
+
+As partículas possuem movimentos suaves e interações visuais que complementam a identidade tecnológica do portfólio sem prejudicar a leitura do conteúdo.
+
+---
+
+# 🚀 Como Executar o Projeto
 
 ### Pré-requisitos
+
 Antes de começar, você precisará ter instalado em sua máquina:
-- [Node.js](https://nodejs.org/) (versão LTS recomendada)
-- Gerenciador de pacotes `npm` (incluído com o Node)
+
+- [Node.js](https://nodejs.org/) — versão LTS recomendada
+- `npm` — gerenciador de pacotes incluído na instalação do Node.js
 
 ### Passo a passo
 
 1. **Clone o repositório:**
+
    ```bash
-   git clone [https://github.com/mylenaes/my_portfolio.git](https://github.com/mylenaes/my_portfolio.git)
+   git clone https://github.com/mylenaes/my_portfolio.git
    ```
 
 2. **Acesse a pasta do projeto:**
+
    ```bash
    cd my_portfolio
    ```
 
 3. **Instale as dependências:**
+
    ```bash
    npm install
    ```
 
+   O comando `npm install` instala automaticamente todas as dependências necessárias para o funcionamento do projeto, conforme definidas no arquivo `package.json`.
+
 4. **Inicie o servidor de desenvolvimento:**
+
    ```bash
    npm run dev
    ```
 
-5. **Acesse no navegador:**
-   Abra o endereço indicado no terminal (geralmente `http://localhost:5173`).
+5. **Acesse o projeto no navegador:**
+
+   Abra o endereço indicado no terminal. Por padrão, o Vite disponibiliza a aplicação em:
+
+   ```text
+   http://localhost:5173
+   ```
 
 ---
 
 ## 📦 Build para Produção
 
-Para gerar a versão otimizada para produção:
+Para gerar a versão otimizada do projeto para produção:
+
 ```bash
 npm run build
 ```
 
-Para testar o resultado da build localmente:
+Após a execução, os arquivos de produção serão gerados na pasta `dist/`.
+
+Para testar a versão de produção localmente:
+
 ```bash
 npm run preview
 ```
